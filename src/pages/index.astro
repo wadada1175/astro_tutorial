@@ -1,8 +1,10 @@
 ---
-
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
-<html lang="en">
+<html lang="jn">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,6 +13,17 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header />
+		<h1>私のAstro</h1>
+		<p>これは入門です</p>
+		<p>Astroは、静的サイトジェネレーターで、コンポーネントベースの開発を可能にします。</p>
+		<p>Astroを使用すると、HTML、CSS、JavaScriptを組み合わせて、効率的で高速なウェブサイトを構築できます。</p>
+		<p>Astroの特徴は、コンポーネントの再利用性と、必要な部分だけをクライアントに送信することです。</p>
+		<p>Astroの公式サイトは<a href="https://astro.build">こちら</a>です。</p>
+		<Footer />
+		<script>
+		  import "../scripts/menu.js";
+		</script>
+	  </body>
 	</body>
 </html>
